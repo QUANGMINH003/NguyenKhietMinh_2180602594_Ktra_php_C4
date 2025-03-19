@@ -14,9 +14,9 @@
     <p>Họ Tên: <?php echo htmlspecialchars($sinhVien['HoTen']); ?></p>
     <p>Giới Tính: <?php echo htmlspecialchars($sinhVien['GioiTinh']); ?></p>
     <p>Ngày Sinh: <?php echo htmlspecialchars($sinhVien['NgaySinh']); ?></p>
-    <p>Hình: <img src="/2180602594_NguyenKhietMinh_KT/<?php echo htmlspecialchars($sinhVien['Hinh']); ?>" width="50" alt="Hình"></p>
+    <p>Hình: <img src="/2180602594_NguyenKhietMinh_KT/<?php echo htmlspecialchars($sinhVien['Hinh']); ?>" width="300" height="300" alt="Hình"></p>
     <p>Ngành: <?php echo htmlspecialchars($sinhVien['MaNganh']); ?></p>
-    <a href="/index.php?controller=student&action=index">Quay lại</a>
+    <a class="btn btn-primary" href="index.php?controller=student&action=index">Quay lại</a>
 </body>
 
 

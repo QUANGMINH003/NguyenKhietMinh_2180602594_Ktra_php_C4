@@ -7,7 +7,7 @@
 <body>
     <div style="text-align: right;">
         Xin chào, <?php echo htmlspecialchars($_SESSION['maSV']) . " - " . htmlspecialchars($_SESSION['hoTen']); ?> |
-        <a href="index.php?controller=auth&action=logout">Đăng Xuất</a>
+        <a class="btn btn-danger" href="index.php?controller=auth&action=logout">Đăng Xuất</a>
     </div>
     <h2>Thông Tin Học Phần Đã Lưu</h2>
     <?php if ($successMessage) echo "<p style='color:green;'>$successMessage</p>"; ?>
@@ -28,12 +28,12 @@
                 <td><?php echo htmlspecialchars($row['TenHP']); ?></td>
                 <td><?php echo htmlspecialchars($row['SoTinChi']); ?></td>
                 <td>
-                    <a href="index.php?controller=course&action=deleteCourse&maDK=<?php echo urlencode($row['MaDK']); ?>&maHP=<?php echo urlencode($row['MaHP']); ?>&maSV=<?php echo urlencode($_GET['maSV']); ?>" onclick="return confirm('Bạn có chắc muốn xóa học phần này?')">Xóa học phần</a>
+                    <a href="index.php?controller=course&action=deleteCourse&maDK=<?php echo urlencode($row['MaDK']); ?>&maHP=<?php echo urlencode($row['MaHP']); ?>&maSV=<?php echo urlencode($_GET['maSV']); ?>" onclick="return confirm('Bạn có chắc muốn xóa học phần này?')" class="btn btn-danger">Xóa học phần</a>
                 </td>
             </tr>
         <?php } ?>
     </table>
-    <a href="index.php?controller=course&action=register">Quay lại Đăng Ký</a>
+    <a class="btn btn-primary" href="index.php?controller=course&action=register">Quay lại Đăng Ký</a>
 </body>
 
 <?php include_once __DIR__ . '/../shares/footer.php'; ?>

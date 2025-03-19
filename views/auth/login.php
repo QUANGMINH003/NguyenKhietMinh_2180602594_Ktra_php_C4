@@ -10,7 +10,7 @@
     <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
     <form method="POST" action="index.php?controller=auth&action=login">
         <label>Mã Sinh Viên:</label><br>
-        <input type="text" name="maSV" required><br>
+        <input type="text" class="form-label" name="maSV" required><br>
         <input type="submit" value="Đăng Nhập">
     </form>
 </body>

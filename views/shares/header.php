@@ -42,7 +42,7 @@
     <!-- ===== HEADER / NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="webbanhang/index.php?controller=product&action=index">Quản lý sản phẩm</a>
+            <a class="navbar-brand" href="index.php?controller=student&action=index">Quản lý sản phẩm</a>
             <div class="collapse navbar-collapse">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -50,7 +50,9 @@
                             <a class="nav-link" href="/2180602594_NguyenKhietMinh_KT/index.php?controller=student&action=index">Danh sách sinh viên</a>
                         </li>
 
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="/2180602594_NguyenKhietMinh_KT/index.php?controller=course&action=register">Đăng ký học phần</a>
+                        </li>
                     </ul>
                 </div>
             </div>
